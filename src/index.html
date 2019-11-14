@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>Enter Your Sudoku</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Sudoku Checker</h1>
+
+      <form id="number">
+        <div class="form-group">
+          <label for="number"></label>
+          <input id="inputnumbers" type="number">
+        </div>
+        <button type="submit" class="btn btn-light" id="button">Check it out</button>
+      </form>
+
+      <div class="container">
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element00">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element01">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element02">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element03">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element04">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element05">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element06">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element07">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element08">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element">
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element11" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-grid">
+          <div class="large-square">
+            <div class="small-grid">
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element" >
+              </div>
+              <div class="small-square">
+                <input class="form-control form-control-lg" type="text" id="element">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="result">
+
+      </div>
+    </div>
+  </body>
+</html>
